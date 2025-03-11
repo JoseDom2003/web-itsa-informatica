@@ -147,7 +147,7 @@
   <div class="container-fluid">
     <!-- Bloque superior: logo y botón -->
     <div class="d-flex justify-content-between w-100">
-      <a class="navbar-brand d-flex align-items-center" href="#" style="white-space: nowrap;">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html" style="white-space: nowrap;">
         <img src="imagenes/imagen_2025-02-18_091508716-Photoroom.png" alt="AGENTS PIONERS Logo" class="me-2">
         AGENTS PIONERS
       </a>

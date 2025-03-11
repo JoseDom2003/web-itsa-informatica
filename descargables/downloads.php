@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="../index.php">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
                 <img src="../imagenes/imagen_2025-02-18_091508716-Photoroom.png" alt="AGENTS PIONERS Logo" class="me-2">
                 AGENTS PIONERS
             </a>
