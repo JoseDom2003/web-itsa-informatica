@@ -29,7 +29,7 @@
                 <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="#acerca-de">Acerca de</a></li>
+                <li class="nav-item"><a class="nav-link" href="#acerca-de">Acerca</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
