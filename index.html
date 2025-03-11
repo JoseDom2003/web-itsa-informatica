@@ -7,6 +7,45 @@
     <link rel="stylesheet" href="./styles/inicio.css">
      <!-- icono -->
      <link rel="icon" type="image/x-icon" href="./imagenes/icono.ico">
+
+     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            opacity: 1;
+            transform: scale(1) rotate(0deg);
+            background-color: transparent;
+        }
+
+        .fade-out {
+            opacity: 0;
+            transform: scale(0.8) rotate(-360deg); /* Efecto bellako 🔥 */
+            background: linear-gradient(90deg, #0062E6, #33AEFF);
+            backdrop-filter: blur(15px); /* Desenfoque elegante */
+        }
+
+        .btn-inicio {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #ff004c; /* Rojo intenso para más actitud 😎 */
+            text-decoration: none;
+            border-radius: 12px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .btn-inicio:hover {
+            background-color: #e60045;
+            transform: scale(1.05);
+        }
+    </style>
+
 </head>
 <body>
     <div class="fullscreen-collage">
@@ -33,10 +72,21 @@
             <img id="bouncing-image" src="./imagenes/Llogo.png" alt="Logo" class="welcome-image">
             <h1>Bienvenidos</h1>
             <p class="slogan">La Tecnología e innovación al alcance del usuario final...</p>
-            <a href="inicio.php" class="btn-inicio">Inicio</a>
+            <a href="#" class="btn-inicio" onclick="navigateTo('inicio.php')">Inicio</a>
         </div>
     </div>
 
+    <script>
+        function navigateTo(url) {
+            // Añade la clase de desvanecimiento
+            document.body.classList.add('fade-out');
+            
+            // Redirige después de que termine la animación
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500); // El tiempo debe coincidir con el valor de `transition` en CSS
+        }
+    </script>
     <script src="inicio.js"></script>
 </body>
 </html>
