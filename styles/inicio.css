@@ -1,0 +1,102 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor de pantalla completa */
+.fullscreen-collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+/* Collage de imágenes */
+.collage-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.collage-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Apartado central con menos difuminado */
+.welcome-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3); /* Fondo oscuro semi-transparente (menos opaco) */
+}
+
+.welcome-content {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Fondo del contenido un poco más oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la imagen */
+.welcome-content .welcome-image {
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+}
+
+/* Efecto de giro al pasar el mouse */
+.welcome-content .welcome-image:hover {
+    transform: rotate(360deg); /* Gira la imagen 360 grados */
+}
+
+.welcome-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.welcome-content .slogan {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+}
+
+.welcome-content .btn-inicio {
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-content .btn-inicio:hover {
+    background-color: #004080
+}
