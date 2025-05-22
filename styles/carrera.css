@@ -1,0 +1,66 @@
+#carrera {
+    background: linear-gradient(to bottom, #f8f9fa, #e3e6ea);
+    text-align: center;
+}
+
+#carrera h2 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+#carrera h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.carrera-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.carrera-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.carrera-card img {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    display: block;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.carrera-card .card-body {
+    padding: 20px;
+}
+
+.carrera-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.carrera-card .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+@media (max-width: 991.98px) {
+    #carrera .card {
+      margin: 0 auto 1.5rem; /* 1.5rem de separación vertical */
+    }
+  }

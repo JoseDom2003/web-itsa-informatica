@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(180deg, #1b81ee 0%, #4da8f7 50%, #00c3ff 100%) no-repeat fixed;
+    margin: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    color: white;
+    text-align: center;
+}
+
+/* Contenedor principal */
+main {
+    margin-top: 20px;
+}
+
+/* Contenedor de los artículos PDF */
+.pdf-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+/* Estilo de los artículos */
+.pdf-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pdf-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.pdf-item h2 {
+    font-size: 1.5em;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.pdf-item p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.pdf-item a {
+    background-color: #004080;
+    color: white;
+    padding-top: 100px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el botón de descarga */
+.download-btn {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Esto separa el botón del contenedor */
+    border: none !important;
+    box-shadow: none !important;
+}
+
+  a {
+    text-decoration: none;
+  }
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #0062E6, #33AEFF);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Aseguramos que el navbar ocupe el 100% del ancho */
+    box-sizing: border-box; /* Aseguramos que el padding no afecte el ancho */
+  }
+  
+  /* Eliminar el padding adicional del container-fluid */
+  .container-fluid {
+    padding: 0; /* Elimina padding */
+    margin: 0; /* Elimina margen */
+  }
+  
+  /* Navbar brand */
+  .navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    max-height: 40px;
+    margin-right: 10px;
+  }
+  
+  /* Navbar links */
+  .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: #fff;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Animación de los ítems del navbar */
+  .navbar-nav .nav-item {
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+  }
+  
+  /* Efecto cuando pasas el mouse sobre los ítems */
+  .navbar-nav .nav-item:hover {
+    transform: translateY(-5px); /* Desplaza el ítem hacia arriba */
+  }
+  
+  /* Para dispositivos con pantalla de 768px o menos */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      width: 100%; /* El navbar debe ocupar todo el ancho */
+      text-align: center; /* Centra los enlaces */
+    }
+  
+    .navbar-nav .nav-link {
+      display: block; /* Los enlaces se deben mostrar como bloques */
+      padding: 10px 0; /* Añadir un poco de espacio a los enlaces */
+    }
+  
+    .navbar-nav .nav-link:hover {
+      background: rgba(255, 255, 255, 0.1); /* Efecto hover */
+    }
+  
+    .navbar-nav .nav-item:hover {
+      transform: none; /* Evitar transformaciones no deseadas */
+    }
+  
+    .navbar-toggler {
+      border: none; /* Elimina el borde del botón */
+    }
+  
+    /* Asegurarse de que no haya desplazamiento horizontal en la página */
+    body {
+      overflow-x: hidden;
+    }
+  }
+  
+  /* Para dispositivos con pantalla de 425px o menos */
+  @media (max-width: 425px) {
+    .navbar-nav {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 12px 0; /* Aumenta el padding de los enlaces para dispositivos más pequeños */
+    }
+  
+    .navbar-nav .nav-link:hover {
+      background: rgba(255, 255, 255, 0.1); /* Fondo de los enlaces */
+    }
+  }
+  

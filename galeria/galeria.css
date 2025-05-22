@@ -1,0 +1,132 @@
+/* Estilo general del cuerpo */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, #1b81ee 0%, #4da8f7 50%, #00c3ff 100%) no-repeat fixed;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, #0062E6, #33AEFF);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-item:hover {
+    transform: translateY(-5px); /* Desplaza el ítem hacia arriba */
+    transition: transform 0.3s ease;
+}
+
+/* Swiper Container */
+.swiper {
+  background: transparent;
+    padding-top: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination {
+    bottom: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #0062E6;
+}
+
+/* Tarjetas (Cards) */
+.card {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Botón dentro de las tarjetas */
+.card .btn {
+    display: table;
+    margin: 0 auto;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+.img-fluid:hover {
+  transform: scale(1.01); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Agrega una sombra */
+}
+
+/* Encabezados */
+.heading h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.heading h4 {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .swiper {
+        padding-top: 120px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .heading h4 {
+        font-size: 1rem;
+    }
+}

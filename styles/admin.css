@@ -1,0 +1,102 @@
+.container-login{
+    max-width: 565px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+body {
+    overflow-x: hidden;
+    background: linear-gradient(90deg, #0062E6, #33AEFF);
+  }
+  #sidebar {
+    min-height: 100vh;
+    background-color: #212529;
+    color: #fff;
+    transition: margin-left 0.3s;
+  }
+  #sidebar a {
+    color: white;
+    text-decoration: none;
+  }
+  #sidebar a:hover {
+    color: gray;
+  }
+  .sidebar-heading {
+    padding: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #6c757d;
+  }
+  .sidebar-hidden {
+    margin-left: -190px;
+  }
+
+/* Asegúrate de que el contenedor .dropdown sea relativo */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Por defecto el menú está oculto */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0; /* para alinearlo al final */
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0.25rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.175);
+  z-index: 1000;
+}
+
+/* Clase que mostramos/ocultamos con JS */
+.dropdown-menu.show {
+  display: block;
+}
+
+   /* Navbar */
+   .navbar {
+    background: linear-gradient(90deg, #0062E6, #33AEFF);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  .navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+    margin-right: 10px;
+  }
+  .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s ease;
+    white-space: nowrap;
+  }
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: #fff;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  /* Animación de los ítems del navbar */
+.navbar-nav .nav-item {
+  transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto cuando pasas el mouse sobre los ítems */
+.navbar-nav .nav-item:hover {
+  transform: translateY(-5px); /* Desplaza el ítem hacia arriba */
+}

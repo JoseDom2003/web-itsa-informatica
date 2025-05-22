@@ -1,0 +1,110 @@
+/* =====================
+     Eventos y Noticias
+===================== */
+#eventos {
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    text-align: center; /* Centra el contenido dentro del contenedor */
+}
+
+#eventos h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    text-align: center; /* Centra el texto */
+}
+
+#eventos h2::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Diseño de Tarjetas de Eventos */
+.event-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.event-card .card-header {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+    border-bottom: none;
+    text-align: center;
+}
+
+.event-card .card-body {
+    padding: 20px;
+}
+
+.event-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Botones de Video */
+.event-card button {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.event-card .btn-primary {
+    background: #007bff;
+    border: none;
+}
+
+.event-card .btn-primary:hover {
+    background: #0056b3;
+}
+
+.event-card .btn-success {
+    background: #28a745;
+    border: none;
+}
+
+.event-card .btn-success:hover {
+    background: #1e7e34;
+}
+
+/* Carrusel de Imágenes */
+.carousel-inner img {
+    border-radius: 8px;
+    object-fit: cover;
+    height: 250px;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 12px;
+}
+
+@media (max-width: 991.98px) {
+    #eventos .card {
+      margin: 0 auto 1.5rem; /* 1.5rem de separación vertical */
+    }
+  }
