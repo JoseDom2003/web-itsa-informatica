@@ -1,5 +1,5 @@
 <?php
-$dbHost = 'localhost';
+$dbHost = 'db5017895561.hosting-data.io';
 $dbName = 'db_agents-pionners';
-$dbUser = 'root';
-$dbPass = '';
+$dbUser = 'dbu13187';
+$dbPass = 'agentespioneros123';

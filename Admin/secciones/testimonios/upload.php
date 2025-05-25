@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $stmt->execute([$nombre, $correo, $mensaje, $calificacion]);
 
             // Redirigir o mostrar un mensaje de éxito
-            header("Location: /inicio.php?success=1#contacto");
+            header("Location: ../../../../../inicio.php");
             exit();
         } catch (PDOException $e) {
             echo "<div class='alert alert-danger text-center'>Error al guardar los datos: " . htmlspecialchars($e->getMessage()) . "</div>";
